@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: feedback_file
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NjEzODIzMTAsInVzZXJuYW1lIjoiZHp5dWJhbiIsImlhdCI6MTc5MDc2MTM4MiwiZXhwIjoxNzkwODQ3NzgyfQ.ygs2EK_SD0UWoOHuwWvDZjkZBcu9uU46BG6BvdDXcpA
+  variables:
+    - name: n
+      value: https://api.kitek-pg.ru/api/marketplace
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
